@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+header,
+section,
+main,
+nav,
+footer,
+article,
+figure,
+hgroup {
+  display: block;
+  width: 100%;
+}

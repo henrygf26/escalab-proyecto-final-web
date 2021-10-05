@@ -1,0 +1,524 @@
+@import url("./normalize.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, helvetica;
+  font-size: 15px;
+  color: rgb(137, 137, 137);
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  background: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  transition: 0.4s all ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 25px 0;
+  padding: 0;
+  font-size: 15px;
+  color: #999999;
+  line-height: 28px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.043) 0px 25px 50px;
+  background: rgb(255, 255, 255);
+}
+
+.header .logo {
+  position: relative;
+  float: left;
+  font-family: "Kaushan Script", helvetica;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 600;
+  color: rgb(41, 41, 41);
+}
+
+.main-menu {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.logotipo {
+  width: 115px;
+}
+
+.menu-link-desktop,
+.menu-link-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-link-mobile {
+  display: none;
+}
+
+.menu-link-desktop li > a {
+  color: rgb(153, 153, 153);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  box-shadow: rgb(123, 143, 253) 0px 0px 0px inset;
+  padding: 0 1rem;
+  line-height: 70px;
+  height: 70px;
+  display: block;
+  text-transform: uppercase;
+  transition: 0.4s all ease-in-out;
+}
+
+.header .banner {
+  margin-top: 100px;
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-image: url("../img/slide-bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner .title {
+  position: relative;
+  margin: 30px 50px 15px 50px;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  transition: all 0.4s ease 0s;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.section.gray {
+  background: #f9f9f9;
+}
+
+.section .titles {
+  width: 100%;
+}
+
+.section .titles .title {
+  font-family: "Kaushan Script", helvetica;
+  color: #292929;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.section-content {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.row {
+  margin: 0 -20px;
+}
+
+.row:last-child {
+  padding: 0;
+}
+
+.col {
+  padding: 0 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-picture {
+  width: calc(100% / 3);
+}
+
+.profile-content {
+  width: calc((100% / 3) * 2);
+}
+
+.profile-title {
+  font-size: 44px;
+  line-height: 56px;
+  margin: 28px 0;
+  font-weight: 400;
+  font-family: "Kaushan Script", helvetica;
+  color: #292929;
+}
+
+.profile-text {
+  margin: 25px 0;
+  padding: 0;
+  font-size: 15px;
+  color: #999999;
+  line-height: 28px;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  background-color: #7b8ffd;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+button.btn {
+  font-size: 15px;
+  padding: 10px 20px;
+  background-color: #7b8ffd;
+  border-radius: 50px;
+  color: #ffffff;
+  border: none;
+  line-height: 20px;
+  font-family: Poppins, helvetica;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #97a6ff;
+}
+
+.services,
+.works,
+.blogs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-card,
+.work-card,
+.blog-card {
+  width: calc(100% / 3);
+}
+
+.service-icon {
+  margin-top: 25px;
+  font-size: 44px;
+  line-height: 48px;
+  color: #7b8ffd;
+  font-weight: normal;
+}
+
+.service-title {
+  margin: 10px 0;
+  position: relative;
+  font-size: 13px;
+  color: #292929;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.service-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.work-card {
+  margin-top: 40px;
+}
+
+.work-card:hover .work-item {
+  transform: translateY(-10px);
+}
+
+.work-item {
+  height: 100%;
+  padding: 0;
+  transition: all 0.3s ease 0s;
+  transform: translateY(0px);
+}
+
+.blog-card {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.blog-image {
+  margin-bottom: 25px;
+  font-size: 0;
+}
+
+.work-card img,
+.blog-card img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.blog-title {
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0 0 13px 0;
+  font-weight: 500;
+  color: #292929;
+}
+
+.blog-summary {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.blog-date {
+  font-size: 12px;
+  font-weight: 400;
+  color: #b9b9b9;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 120px 0 60px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  footer {
+    padding: 40px 0;
+  }
+}
+
+footer .copy {
+  font-size: 13px;
+  color: #898989;
+}
+
+.socials {
+  position: relative;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.socials a {
+  margin: 0 6px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border: 1px solid #ccc;
+  transition: all 0.4s ease 0s;
+  border-radius: 42px;
+}
+
+.socials a .icon {
+  font-size: 18px;
+  color: #292929;
+  transition: all 0.4s ease 0s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.socials a:hover {
+  border: 1px solid #292929;
+}
+
+.socials a:hover .icon {
+  color: #292929;
+}
+
+.element {
+  width: 100%;
+  display: flex;
+  margin: 0 -20px;
+}
+
+.element .item {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.element .item-full {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.item label,
+.item input,
+.item-full textarea {
+  width: 100%;
+}
+
+.item label,
+.item-full label {
+  font-size: 15px;
+  color: #292929;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.item input,
+.item-full textarea {
+  margin: 0 0 25px 0;
+  padding: 0 20px;
+  display: block;
+  width: 100%;
+  height: 48px;
+  color: #999999;
+  font-weight: 500;
+  resize: none;
+  outline: 0;
+  background: none;
+  border-radius: 25px;
+  border: 0.5px solid #999999;
+}
+
+.item-full textarea {
+  padding: 20px;
+  height: 200px;
+}
+
+.blog-detail-title {
+  font-size: 38px;
+  line-height: 46px;
+  margin: 0 0 5px 0;
+  color: #292929;
+  font-weight: 400;
+  font-family: "Kaushan Script", helvetica;
+}
+
+.blog-detail-date {
+  font-size: 13px;
+  color: #b9b9b9;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.blog-detail-image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.blog-detail-image img,
+.blog-detail-image video {
+  width: 100%;
+}
+
+@media only screen and (max-width: 779px) {
+  .main-menu {
+    justify-content: center;
+  }
+
+  .menu-link-desktop {
+    display: none;
+  }
+
+  .profile {
+    flex-wrap: wrap;
+  }
+
+  .profile-picture {
+    width: 100%;
+  }
+
+  .profile-content {
+    width: 100%;
+  }
+
+  .service-card,
+  .work-card,
+  .blog-card {
+    width: 100%;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-content {
+    padding: 0 5%;
+    max-width: 100%;
+  }
+
+  .element {
+    flex-direction: column;
+  }
+
+  .element .item {
+    width: 100%;
+  }
+
+  .special-section {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1079px) {
+  .profile-picture {
+    width: calc(100% / 2);
+  }
+
+  .profile-content {
+    width: calc(100% / 2);
+  }
+
+  .service-card,
+  .work-card,
+  .blog-card {
+    width: calc(100% / 2);
+  }
+
+  .section-content {
+    padding: 0 5%;
+    max-width: 100%;
+  }
+}
+
+.success {
+  border: 1px solid green !important;
+}
+
+.error {
+  border: 0.5px solid red !important;
+  color: red;
+}

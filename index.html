@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henrygf26 - Portfolio</title>
+
+    <!-- Load Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CPoppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/modal.css" />
+
+    <script src="./src/js/data.js"></script>
+    <script src="./src/js/load.js"></script>
+    <script src="./src/js/validate.js"></script>
+    <script src="./src/js/font-awesome.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-menu">
+        <a class="logo" href="index.html">Henrygf26</a>
+        <ul class="menu-link-desktop">
+          <li>
+            <a href="#about-section">Sobre mí</a>
+          </li>
+          <li><a href="#services-section">Qué hago?</a></li>
+          <li><a href="#works-section">Trabajos</a></li>
+          <li><a href="#blog-section">Blog</a></li>
+          <li><a href="#contact-section">Cont&aacute;ctame</a></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <div>
+          <p class="title">Desarrollador</p>
+          <p class="title">Frontend</p>
+          <p class="title">Backend</p>
+          <p class="title">Apps</p>
+        </div>
+      </div>
+    </header>
+    <div id="about-section" class="section">
+      <div class="section-content">
+        <div class="row profile">
+          <img class="col profile-picture" src="./src/img/profile.png" alt="" />
+          <div class="col profile-content">
+            <p class="profile-title">
+              I'm Steven Hendrix,
+              <br />
+              Web Designer & Web Developer
+              <br />
+              from United States, California.
+            </p>
+            <p class="profile-text">
+              I have rich experience in web site design & building and
+              customization. Also I am good at html, css, javascript, wordpress,
+              php, jquery, bootstrap. I love to talk with you about our unique
+              approach. Feel free to contact me writing an email with your
+              project idea.
+            </p>
+            <div class="btns">
+              <a href="" class="btn">Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services-section" class="section gray">
+      <div class="section-content">
+        <div class="titles">
+          <p class="title">Qué hago?</p>
+        </div>
+        <div id="services" class="row services"></div>
+      </div>
+    </div>
+    <div id="works-section" class="section">
+      <div class="section-content">
+        <div class="titles">
+          <p class="title">Trabajos Recientes</p>
+        </div>
+        <div id="works" class="row works"></div>
+      </div>
+    </div>
+    <div id="blog-section" class="section gray">
+      <div class="section-content">
+        <div class="titles">
+          <p class="title">Blogs</p>
+        </div>
+        <div id="blogs" class="row blogs summary"></div>
+        <div class="btns">
+          <a href="blogs.html" class="btn">Ver Todos</a>
+        </div>
+      </div>
+    </div>
+    <div id="contact-section" class="section">
+      <div class="section-content">
+        <div class="titles">
+          <p class="title">Cont&aacute;ctame</p>
+        </div>
+        <div class="contact-data">
+          <div class="element">
+            <div class="item">
+              <label for="fullname">Nombre</label>
+              <input
+                id="fullname"
+                type="text"
+                placeholder="Ingresa tu nombre"
+              />
+            </div>
+            <div class="item">
+              <label for="phone">Numero de telefono</label>
+              <input
+                id="phone"
+                type="number"
+                placeholder="Ingresa tu telefono"
+              />
+            </div>
+          </div>
+          <div class="element">
+            <div class="item">
+              <label for="email">Email</label>
+              <input id="email" type="text" placeholder="Ingresa tu email" />
+            </div>
+            <div class="item">
+              <label for="subject">Asunto</label>
+              <input id="subject" type="text" placeholder="Ingresa tu email" />
+            </div>
+          </div>
+          <div class="element">
+            <div class="item-full">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                placeholder="Ingresa tu mensaje"
+                name=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="btn" onclick="validateData()">Enviar</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="social-networks" class="socials"></div>
+      <div class="copy">© 2021 Henrygf26. all rights reserved.</div>
+    </footer>
+    <div id="work-modal" class="modal">
+      <div class="modal-content">
+        <div>
+          <div id="work-image" class="work-image"></div>
+          <div class="work-text">
+            <p id="work-category" class="work-category"></p>
+            <p id="work-title" class="work-title"></p>
+            <p id="work-description" class="work-description"></p>
+            <a id="work-url" href="" class="btn">Ver Proyecto</a>
+          </div>
+        </div>
+        <button id="close-modal" type="button" class="close-modal">
+          &times;
+        </button>
+      </div>
+    </div>
+    <script src="./src/js/modal.js"></script>
+  </body>
+</html>
